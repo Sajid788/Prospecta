@@ -2,8 +2,6 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const productRoutes = require('./productRoutes');
 
-const PORT = 8080;
-
 const app = express();
 app.use(bodyParser.json());
 
@@ -11,10 +9,9 @@ app.use(bodyParser.json());
 app.get('/', (req, res) => {
   res.send('Hello, world!');
 });
+
+// API routes
 app.use('/api', productRoutes);
 
-
-
-app.listen(PORT, () => {
-  console.log(`Server running at http://localhost:${PORT}`);
-});
+// Export the app for Vercel
+module.exports = app;
