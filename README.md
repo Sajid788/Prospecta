@@ -31,7 +31,11 @@ npm install
 npm start
 ```
 
+#### The application will be accessible at https://prospecta-ay2a.vercel.app/
+
 ### API Endpoints
+
+- **Get all Products:** `GET /api/products`
 
 - **List of Products by Category:** `GET /api/products/category/{category}`
 
@@ -67,7 +71,7 @@ npm start
 
 ```
 
-- **Add New Product:** `POST /products`
+- **Add New Product:** `POST /api/products`
 
 ##### Request Body:
 
