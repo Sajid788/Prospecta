@@ -11,7 +11,7 @@ app.get('/', (req, res) => {
 });
 
 // API routes
-app.use('/api', productRoutes);
+app.use('/', productRoutes);
 
 // Export the app for Vercel
 module.exports = app;
